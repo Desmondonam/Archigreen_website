@@ -1,7 +1,9 @@
-/* * {
+* {
     padding: 0px;
     margin: 0px;
-} */
+}
+
+header {}
 
 .header_intro {
     align-content: center;
@@ -34,7 +36,7 @@
     float: right;
     width: 80px;
     height: 40px;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 span {
@@ -55,54 +57,172 @@ span {
     margin: 10px;
 }
 
+.header_intro {
+    text-align: center;
+    background-color: white;
+}
 
-/* the next batch from here */
+aside {
+    display: block;
+}
 
 
-/* ##########   menu items   ########## */
+/*.Contact{
+	border: 4px solid red;
+	width: 300px;
+	height: 400px;
+}
+*/
 
-.item-container {
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
-    /* from the link */
-    overflow: hidden;
-    background: linear-gradient()rgb(0, 0, 0), rgb(0, 0, 0);
-    transition: all 2s ease;
+    margin: auto;
 }
 
-.item-img {
-    transition: all 2s ease;
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
 }
 
-.item-container:hover .item-img {
-    transform: scale(1.2);
-    opacity: 0.5;
+.sliderImage {
+    align-content: center;
+    width: 80%;
+    height: 600px;
 }
 
-.item-link {
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #d3325f;
-    font-size: 2rem;
-    border-top: 3px solid #d3325f;
-    border-bottom: 3px solid #d3325f;
-    transition: all 2s ease;
-    opacity: 0;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.item-container:hover .item-link {
-    opacity: 1;
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.item-link:hover {
-    color: #c9c1ac;
-    border: 3px solid #c9c1ac;
-    background: #c9c1ac;
-    color: #242424;
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.item-container:hover {
-    outline: 10px solid #d3325f;
-    outline-offset: 0.8rem;
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.slideshow-container {
+    background-image: url(images/IMG_5875.JPG);
+}
+
+.footer {
+    border-top: solid 5px red;
+    background-color: grey;
+    padding-bottom: 10px;
+    /*	float: left;
+*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    position: fixed;
+}
+
+.footer-nav li {
+    list-style: none;
+    float: right;
+    width: 80px;
+    height: 40px;
+    background-color: orange;
 }
